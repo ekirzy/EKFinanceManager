@@ -34,7 +34,7 @@ CAT_EXPENSE = ["Makanan", "Transportasi", "Belanja", "Tagihan", "Hiburan", "Kese
 CAT_INCOME = ["Gaji", "Bonus", "Investasi", "Hadiah", "Lainnya"]
 
 def main(page: ft.Page):
-    page.title = "Dompet V23 (Edit & Borders)"
+    page.title = "EKFinanceManager"
     page.theme_mode = ft.ThemeMode.LIGHT 
     page.bgcolor = C_BG
     page.padding = 0
@@ -385,4 +385,5 @@ def main(page: ft.Page):
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 8080))
+
     ft.app(target=main, view=ft.WEB_BROWSER, port=port, host="0.0.0.0")
